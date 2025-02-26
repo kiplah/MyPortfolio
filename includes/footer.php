@@ -4,7 +4,7 @@
             <!-- Quick Links -->
             <div class="col-md-3">
                 <h5 class="footer-title">QUICK LINKS</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled quick-links">
                     <li><a href="index.php" class="text-white">Home</a></li>
                     <li><a href="about.php" class="text-white">About</a></li>
                     <li><a href="services.php" class="text-white">Services</a></li>
@@ -25,12 +25,24 @@
             <div class="col-md-3">
                 <h5 class="footer-title">FOLLOW ME</h5>
                 <div class="social-icons">
-                    <a href="https://facebook.com/yourfacebook" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
-                    <a href="https://wa.me/254703924936" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
-                    <a href="https://twitter.com/yourtwitter" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
-                    <a href="https://instagram.com/yourinstagram" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
-                    <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/yourgithub" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
+                    <a href="https://www.facebook.com/victor.collins.589583/" target="_blank">
+                        <img src="assets/icons/facebook.png" alt="Facebook" width="30">
+                    </a>
+                    <a href="https://wa.me/254703924936" target="_blank">
+                        <img src="assets/icons/whatsapp.png" alt="WhatsApp" width="30">
+                    </a>
+                    <a href="https://x.com/kiplah001" target="_blank">
+                        <img src="assets/icons/twitter.png" alt="Twitter" width="30">
+                    </a>
+                    <a href="https://www.instagram.com/kiplah_1/" target="_blank">
+                        <img src="assets/icons/instagram.png" alt="Instagram" width="30">
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-kiplangat-03b2b3350/" target="_blank">
+                        <img src="assets/icons/linkedin.png" alt="LinkedIn" width="30">
+                    </a>
+                    <a href="https://github.com/kiplah" target="_blank">
+                        <img src="assets/icons/github.png" alt="GitHub" width="30">
+                    </a>
                 </div>
             </div>
 
@@ -39,7 +51,7 @@
                 <h5 class="footer-title">SUBSCRIBE TO MY NEWSLETTER</h5>
                 <p>Get the latest updates and special offers</p>
                 <form>
-                    <input type="email" class="form-control mb-2" placeholder="Enter your email">
+                    <input type="email" class="form-control mb-2" placeholder="Enter your email" required>
                     <button class="btn btn-danger w-100">Subscribe</button>
                 </form>
             </div>
@@ -51,7 +63,7 @@
         </div>
     </div>
 </footer>
-
+<script src="assets/js/script.js"></script>
 <!-- Bootstrap & FontAwesome -->
 <script src="https://kit.fontawesome.com/b71d3ae7ce.js" crossorigin="anonymous"></script>
 </body>
