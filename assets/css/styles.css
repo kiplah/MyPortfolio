@@ -1,0 +1,155 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    height: 90vh;
+    background: url('../img/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Dark overlay for better text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Ensure text appears above the overlay */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Smooth fade-in animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+.delay {
+    animation-delay: 0.5s;
+}
+.delay-btn {
+    animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ===== About Me Section ===== */
+.about {
+    background: #f8f9fa;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 80%;
+}
+
+.about .profile-img {
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth fade-in animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+.delay {
+    animation-delay: 0.5s;
+}
+.delay-btn {
+    animation-delay: 1s;
+}
+/* ===== Footer Styles ===== */
+.footer {
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #f39c12;
+}
+
+.footer i {
+    transition: transform 0.3s ease;
+}
+
+.footer i:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Alignment */
+@media (max-width: 768px) {
+    .footer .text-md-end {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+}
+/* Footer Styling */
+.footer {
+    background: #222;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 8px;
+}
+
+.footer .list-unstyled a {
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .list-unstyled a:hover {
+    color: #f39c12;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #f39c12;
+}
