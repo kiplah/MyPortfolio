@@ -4,46 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Kiplangat | Portfolio</title>
-    
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css"> 
-    
-    <!-- Bootstrap JS (Defer for Better Performance) -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Custom CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <style>
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Improved Navbar Brand Style */
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #f8f9fa !important;
-        }
-
-        /* Fix Navbar Overlapping */
-        body {
-            padding-top: 80px; /* Adjust based on navbar height */
-        }
-    </style>
 </head>
 <body>
-
-<?php 
-    $currentPage = basename($_SERVER['PHP_SELF']); 
-?>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
         <!-- Logo / Brand -->
-        <a class="navbar-brand" href="index.php">Victor Kiplangat</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.php">
+            <img src="assets/images/logo.jpeg" alt="Victor Kiplangat Logo" width="40" height="40" class="me-2">
+            Victor Kiplangat
+        </a>
         
         <!-- Mobile Menu Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -73,6 +47,10 @@
         </div>
     </div>
 </nav>
+
+
+<!-- Header Spacer (To avoid content being hidden under fixed navbar) -->
+<div style="margin-top: 80px;"></div>
 
 </body>
 </html>
