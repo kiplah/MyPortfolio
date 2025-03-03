@@ -3,18 +3,19 @@
 <!-- Hero Section -->
 <section class="hero d-flex align-items-center">
     <div class="container text-center">
-        <!-- Static Hello Text -->
-        <h1 class="fw-bold mb-0">Hello, there!</h1> <!-- mb-0 to remove default margin -->
-
-        <!-- Typing Animation Below -->
-        <div class="typing-container mt-3"> <!-- Added mt-3 for spacing -->
-            <span id="typed-text"></span> <!-- Holds the typing effect -->
+        <!-- Static Hello Text and Typing Effect -->
+        <div class="hero-text">
+            <h1 class="fw-bold mb-0">Hello, there!</h1> <!-- Static text -->
+            <div class="typing-container">
+                <span id="typed-text"></span> <!-- Typing effect -->
+            </div>
         </div>
+    </div>
 
-        <!-- Fixed Button Below Typing Animation -->
-        <div class="mt-4"> <!-- Added mt-4 for spacing -->
-            <a href="projects.php" class="btn btn-primary btn-lg">View My Work</a>
-        </div>
+    <!-- Buttons Container -->
+    <div class="fixed-button">
+        <a href="projects.php" class="btn btn-primary btn-lg">View My Work</a>
+        <a href="assets/My Resume.pdf" class="btn btn-outline-light btn-lg resume-button" download>Download My Resume</a>
     </div>
 </section>
 
@@ -26,8 +27,8 @@
             <div class="col-lg-6">
                 <h2 class="fw-bold fade-in">About Me</h2>
                 <p class="lead fade-in delay">
-                    I'm Victor Kiplangat, a passionate **Full-Stack Developer** with expertise in PHP, JavaScript, and database management.
-                    I specialize in creating **responsive and scalable** web applications, integrating advanced technologies for seamless user experiences.
+                    I'm Victor Kiplangat, a passionate <strong>Full-Stack Developer</strong> with expertise in PHP, JavaScript, and database management.
+                    I specialize in creating <strong>responsive and scalable</strong> web applications, integrating advanced technologies for seamless user experiences.
                 </p>
                 <a href="about.php" class="btn btn-primary fade-in delay-btn">Read More</a>
             </div>
@@ -94,28 +95,58 @@
     z-index: 2;
 }
 
-/* Typing Effect Styling */
-.typing-container {
-    font-size: 50px; /* Increased font size */
+/* Fix Hello There and Typing Effect Position */
+.hero-text {
+    font-size: 50px;
     font-weight: bold;
-    color: white;
-    margin-top: 100px; /* Space below "Hello, there!" */
+    color:rgb(247, 8, 139);
 }
 
-/* Fixed Button Position */
-.mt-4 {
-    margin-top: 20px; /* Ensures proper spacing */
+/* Typing Effect Styling */
+.typing-container {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Fix View My Work & Resume Button Position */
+.fixed-button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+}
+
+/* Style for Resume Button */
+.resume-button {
+    margin-top: 50%; /* Spacing below View My Work */
+    margin-left: -50%; /* Slightly shift left */
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+}
+
+.resume-button:hover {
+    background: white;
+    color: black;
 }
 
 /* Responsive Font Size */
 @media (max-width: 768px) {
-    .typing-container {
+    .hero-text {
         font-size: 40px;
     }
 }
 
 @media (max-width: 480px) {
-    .typing-container {
+    .hero-text {
         font-size: 30px;
     }
 }
